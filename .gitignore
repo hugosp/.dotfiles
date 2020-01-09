@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# But not these files...
+.gitignore
+README.md
+
+setup.sh
+.tmux.conf
+.aliases
+.functions
+

@@ -9,4 +9,6 @@
 !.tmux.conf
 !.aliases
 !.functions
+!.bash_profile
+!tmux-theme.sh
 

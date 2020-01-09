@@ -2,11 +2,11 @@
 *
 
 # But not these files...
-.gitignore
-README.md
+!.gitignore
+!README.md
 
-setup.sh
-.tmux.conf
-.aliases
-.functions
+!setup.sh
+!.tmux.conf
+!.aliases
+!.functions
 

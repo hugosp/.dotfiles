@@ -2,5 +2,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-alias ls='ls --color=auto'
+alias ls='ls --color=auto -lF'
 alias la='ls -lA'
+alias lsd="ls | grep --color=never '^d'"

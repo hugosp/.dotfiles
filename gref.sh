@@ -5,9 +5,10 @@ version="0.0.1"
 # search directory defaults to current
 dir=.
 
+# all dir list space separated
 dir_list=' ~ '
 
-# # Exclude directories
+# Exclude directories
 exclude=" \
   ! -path '*/node_modules*' \
   ! -path '*/vendor*' \

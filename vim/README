@@ -1,0 +1,10 @@
+wip. Vim config. al'a Hewgo
+
+
+
+git clone <repo>
+then run .vim/setup to install vundle 
+
+open vim and run :PluginInstall
+
+Complete =D

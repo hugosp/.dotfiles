@@ -1,15 +1,15 @@
 # Ignore everything
-*
+#*
 
 # But not these files...
-!.gitignore
-!README.md
+#!.gitignore
+#!README.md
 
-!setup.sh
-!.tmux.conf
-!.aliases
-!.functions
-!.bash_profile
-!tmux-theme.sh
-!gref.sh
-!colors.sh
+#!setup.sh
+#!.tmux.conf
+#!.aliases
+#!.functions
+#!.bash_profile
+#!tmux-theme.sh
+#!gref.sh
+#!colors.sh

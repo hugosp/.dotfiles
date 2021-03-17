@@ -1,0 +1,13 @@
+[user]
+	name=hugosp
+	email=stefan.sundell@gmail.com
+[push]
+	default=simple
+[credential]
+    helper=cache --timeout=7200
+
+[core]
+    editor = vim
+    whitespace = fix,trailing-space,cr-at-eol
+    excludesfile = ~/.gitignore_global
+    commitGraph = true

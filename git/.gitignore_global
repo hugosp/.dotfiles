@@ -1,0 +1,24 @@
+# packages
+vendor/
+node_modules/
+.cache/
+.parcel-cache
+.npm
+.eslintcache
+.yarn
+dist/
+.vscode*
+
+
+# files
+*.log
+*.cache
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# secret 
+.env
+config.php
+

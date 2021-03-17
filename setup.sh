@@ -2,11 +2,11 @@
 
 ### SYMLINKS
 echo "* Adding Symlinks"
-[[ -f  ~/.tmux.conf ]] || ln -sv ~/.dotfiles/tmux/.tmux.conf ~
-[[ -d  ~/.vim ]] || ln -sv ~/.dotfiles/vim/ ~/.vim
+[[ -e  ~/.tmux.conf ]] || ln -sv ~/.dotfiles/tmux/.tmux.conf ~
+[[ -e  ~/.vim ]] || ln -sv ~/.dotfiles/vim/ ~/.vim
 
-[[ -f  ~/.gitconfig ]] || ln -sv ~/.dotfiles/git/.gitconfig ~
-[[ -f  ~/.gitignore_global ]] || ln -sv ~/.dotfiles/git/.gitignore_global ~
+[[ -e  ~/.gitconfig ]] || ln -sv ~/.dotfiles/git/.gitconfig ~
+[[ -e  ~/.gitignore_global ]] || ln -sv ~/.dotfiles/git/.gitignore_global ~
 
 ## ADD READ BASH-EXTRAS TO .bashrc
 echo "* Adding alias and functions to bashrc"

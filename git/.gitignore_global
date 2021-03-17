@@ -1,4 +1,4 @@
-# packages
+# dirs
 vendor/
 node_modules/
 .cache/
@@ -9,10 +9,36 @@ node_modules/
 dist/
 .vscode*
 
+# vcs
+.git/
+.hg/
+.svn/
 
-# files
-*.log
+# cache
 *.cache
+*.log
+*~
+*#
+*.bak
+*.BAK
+*.old
+*.OLD
+*.off
+*.OFF
+*.dist
+*.DIST
+*.orig
+*.ORIG
+*.rej
+*.REJ
+*.swp
+*.swo
+*.swn
+*.swm
+*.tmp
+ 
+
+# random files
 pids
 *.pid
 *.seed
@@ -21,4 +47,17 @@ pids
 # secret 
 .env
 config.php
+*_rsa
+*_rsa.*
+*_dsa
+*_dsa.*
+*_keys
+*.pem
+*.key
+*.gpg
 
+# os
+.DS_Store*
+
+# packaging
+._pkg

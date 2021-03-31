@@ -1,0 +1,3 @@
+function mexec() {
+    for dir in ./*/; do (cd "$dir" && echo ${PWD} && $@); done
+}

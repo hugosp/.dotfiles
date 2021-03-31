@@ -5,6 +5,8 @@ echo "* Adding Symlinks"
 [[ -e  ~/.tmux.conf ]] || ln -sv ~/.dotfiles/tmux/.tmux.conf ~
 [[ -e  ~/.vim ]] || ln -sv ~/.dotfiles/vim/ ~/.vim
 
+[[ -e  ~/.zshrc ]] || ln -sv ~/.dotfiles/zsh/.zshrc ~
+
 [[ -e  ~/.gitconfig ]] || ln -sv ~/.dotfiles/git/.gitconfig ~
 [[ -e  ~/.gitignore_global ]] || ln -sv ~/.dotfiles/git/.gitignore_global ~
 

@@ -96,6 +96,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+source ~/.dotfiles/bash/.aliases
+source ~/.dotfiles/bash/.functions
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

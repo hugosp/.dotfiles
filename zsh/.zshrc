@@ -138,7 +138,7 @@ source ~/.zprofile
 
 alias ga='git add . && git status'
 alias gl='git log --oneline'
-
+alias gp='git push'
 function gc() {
   git commit -m "$*"
 }

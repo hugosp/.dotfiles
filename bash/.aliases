@@ -9,4 +9,6 @@ alias ....='cd ../../..'
 alias ls='exa -ah --icons --git'
 alias la='ls -l'
 
+alias cat='batcat'
+
 alias tmux="TERM=xterm-256color tmux"

@@ -20,4 +20,4 @@ echo "* Adding vundle to vim - Remember to run vundle install first time."
 
 echo "* Install global tools from npm"
 npm i -g diff-so-fancy
-
+sudo apt install bat

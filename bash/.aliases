@@ -2,8 +2,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-alias ls='ls --color=auto'
-alias la='ls -lA'
-alias lsd="ls | grep --color=never '^d'"
+#alias ls='ls --color=auto'
+#alias la='ls -lA'
+#alias lsd="ls | grep --color=never '^d'"
+
+alias ls='exa -ah --icons --git'
+alias la='ls -l'
 
 alias tmux="TERM=xterm-256color tmux"

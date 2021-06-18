@@ -54,7 +54,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -83,10 +83,11 @@ HIST_STAMPS="dd.mm.yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
 	vscode
 	zsh-completions
 )
+
+#git 
 
 autoload -U compinit && compinit
 
@@ -98,6 +99,8 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.dotfiles/bash/.aliases
 source ~/.dotfiles/bash/.functions
+
+unsetopt correct
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -130,4 +133,13 @@ source ~/.dotfiles/bash/.functions
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion"  ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source ~/.zprofile
+
+alias ga='git add . && git status'
+alias gl='git log --oneline'
+alias gp='git push'
+function gc() {
+  git commit -m "$*"
+}
 

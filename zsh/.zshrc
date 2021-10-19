@@ -85,6 +85,7 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(
 	vscode
 	zsh-completions
+	fzf-tab
 )
 
 #git 

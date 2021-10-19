@@ -12,3 +12,11 @@ alias la='ls -l'
 alias cat='batcat'
 
 alias tmux="TERM=xterm-256color tmux"
+
+alias gss='git status'
+alias ga='git add . && gss'
+alias gl='git log --oneline'
+
+function gc() {
+  git commit -m "$*"
+}

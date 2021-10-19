@@ -21,3 +21,7 @@ echo "* Adding vundle to vim - Remember to run vundle install first time."
 echo "* Install global tools from npm"
 npm i -g diff-so-fancy
 sudo apt install bat
+
+sudo add-apt-repository ppa:ultradvorka/ppa && sudo apt update && sudo apt install hstr
+hstr --show-configuration >> ~/.bashrc && . ~/.bashrc
+hstr --show-configuration >> ~/.zshrc && . ~/.zshrc

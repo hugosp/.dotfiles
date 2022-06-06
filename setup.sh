@@ -18,11 +18,18 @@ cat ~/.bashrc | grep -qF 'source ~/.dotfiles/bash/.bash_profile' || echo 'source
 echo "* Adding vundle to vim - Remember to run vundle install first time."
 [[ -d ~/.dotfiles/vim/bundle/Vundle.vim ]] || git clone https://github.com/VundleVim/Vundle.vim.git ~/.dotfiles/vim/bundle/Vundle.vim
 
-echo "* Install global tools from npm"
-npm i -g diff-so-fancy
-sudo apt install bat
-sudo apt install magic-wormhole
+## Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-sudo add-apt-repository ppa:ultradvorka/ppa && sudo apt update && sudo apt install hstr
+echo 'eval "$(/home/hugo/.linuxbrew/bin/brew shellenv)"' >> /home/hugo/.profile
+eval "$(/home/hugo/.linuxbrew/bin/brew shellenv)"
+
+## tools
+brew install bat
+brew install diff-so-fancy
+brew install magic-wormhole
+brew install hstr
+
+## Add hstr to bash/zsh
 hstr --show-configuration >> ~/.bashrc && . ~/.bashrc
 hstr --show-configuration >> ~/.zshrc && . ~/.zshrc

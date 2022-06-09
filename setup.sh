@@ -21,8 +21,11 @@ echo "* Adding vundle to vim - Remember to run vundle install first time."
 ## Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-echo 'eval "$(/home/hugo/.linuxbrew/bin/brew shellenv)"' >> /home/hugo/.profile
-eval "$(/home/hugo/.linuxbrew/bin/brew shellenv)"
+# echo 'eval "$(/home/hugo/.linuxbrew/bin/brew shellenv)"' >> /home/hugo/.profile
+# eval "$(/home/hugo/.linuxbrew/bin/brew shellenv)"
+
+#echo 'eval "$($HOME/.linuxbrew/bin/brew shellenv)"' >> $HOME/.profile
+eval "$($HOME/.linuxbrew/bin/brew shellenv)"
 
 ## tools
 brew install bat

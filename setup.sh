@@ -24,8 +24,9 @@ echo "* Adding vundle to vim - Remember to run vundle install first time."
 # echo 'eval "$(/home/hugo/.linuxbrew/bin/brew shellenv)"' >> /home/hugo/.profile
 # eval "$(/home/hugo/.linuxbrew/bin/brew shellenv)"
 
-#echo 'eval "$($HOME/.linuxbrew/bin/brew shellenv)"' >> $HOME/.profile
-eval "$($HOME/.linuxbrew/bin/brew shellenv)"
+echo "$($HOME/.linuxbrew/bin/brew shellenv)" >> $HOME/.profile
+
+$HOME/.linuxbrew/bin/brew shellenv
 
 ## tools
 brew install bat

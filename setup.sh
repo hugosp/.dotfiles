@@ -2,8 +2,12 @@
 
 ## Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo "$($HOME/.linuxbrew/bin/brew shellenv)" >> $HOME/.profile
-$HOME/.linuxbrew/bin/brew shellenv
+echo 'eval "$($HOME/.linuxbrew/bin/brew shellenv)"' >> $HOME/.zprofile
+echo 'eval "$($HOME/.linuxbrew/bin/brew shellenv)"' >> $HOME/.profile
+eval "$($HOME/.linuxbrew/bin/brew shellenv)"
+
+#echo '"$($HOME/.linuxbrew/bin/brew shellenv)"' >> $HOME/.profile
+#$HOME/.linuxbrew/bin/brew shellenv
 
 ## Install tools
 brew install stow
@@ -11,11 +15,6 @@ brew install bat
 brew install diff-so-fancy
 #brew install magic-wormhole
 brew install hstr
-
-## Add hstr to bash/zsh
-hstr --show-configuration >> ~/.bashrc && . ~/.bashrc
-hstr --show-configuration >> ~/.zshrc && . ~/.zshrc
-
 
 ### SYMLINKS
 echo "* Adding Symlinks"

@@ -1,20 +1,14 @@
 #!/bin/bash
 
-## Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$($HOME/.linuxbrew/bin/brew shellenv)"' >> $HOME/.zprofile
-echo 'eval "$($HOME/.linuxbrew/bin/brew shellenv)"' >> $HOME/.profile
-eval "$($HOME/.linuxbrew/bin/brew shellenv)"
+sudo apt install zsh
+sudo apt install stow
+sudo apt install hstr
 
-#echo '"$($HOME/.linuxbrew/bin/brew shellenv)"' >> $HOME/.profile
-#$HOME/.linuxbrew/bin/brew shellenv
+### zsh as default
+chsh -s $(which zsh)
 
-## Install tools
-brew install stow
-brew install bat
-brew install diff-so-fancy
-#brew install magic-wormhole
-brew install hstr
+### bundle zsh_plugins 
+antibody bundle < ~/.dotfiles/zsh/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
 ### SYMLINKS
 echo "* Adding Symlinks"

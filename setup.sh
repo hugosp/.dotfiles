@@ -1,8 +1,8 @@
 #!/bin/bash
 
-sudo apt install zsh
-sudo apt install stow
-sudo apt install hstr
+#sudo apt install zsh
+#sudo apt install stow
+#sudo apt install hstr
 
 ### zsh as default
 chsh -s $(which zsh)

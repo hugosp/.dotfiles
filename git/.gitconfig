@@ -1,8 +1,12 @@
 [user]
 	name=hugoup
 	email=stefan@unitedprofile.se
-[push]
+    #name = hugosp
+    #email = stefan.sundell@gmail.com
+[safe]
+	directory = /home/hugo/.dotfiles
 	default=simple
+
 [credential]
     helper=cache --timeout=7200
 

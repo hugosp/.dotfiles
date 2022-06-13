@@ -15,11 +15,11 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-source ~/.dotfiles/bash/.aliases
-source ~/.dotfiles/bash/.functions
+source ~/.dotfiles/common/.aliases
+source ~/.dotfiles/common/.functions
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.dotfiles/zsh/.p10k.zsh ]] || source ~/.dotfiles/zsh/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
 # NVM

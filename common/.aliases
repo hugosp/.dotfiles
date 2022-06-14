@@ -1,3 +1,7 @@
+
+MICRO_TRUECOLOR=1
+
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'

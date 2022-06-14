@@ -1,0 +1,7 @@
+{
+    "Alt-c": "command:comment",
+    "Alt-/": "lua:comment.comment",
+    "Alt-f": "lua:filemanager.toggle_tree",
+    "CtrlUnderscore": "lua:comment.comment",
+    "F5": "lua:wc.wordCount"
+}

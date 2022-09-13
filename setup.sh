@@ -29,5 +29,8 @@ micro -plugin install wc
 echo "* Adding alias and functions to bashrc"
 cat ~/.bashrc | grep -qF 'source ~/.dotfiles/bash/.bash_profile' || echo 'source ~/.dotfiles/bash/.bash_profile' >> ~/.bashrc
 
-echo "* Adding vundle to vim - Remember to run vundle install first time."
+echo "* Adding vundle to vim."
 [[ -d ~/.dotfiles/vim/.vim/bundle/Vundle.vim ]] || git clone https://github.com/VundleVim/Vundle.vim.git ~/.dotfiles/vim/.vim/bundle/Vundle.vim
+
+echo "* Installing vim plugins."
+vim +PluginInstall +qall

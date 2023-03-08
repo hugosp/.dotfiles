@@ -1,0 +1,83 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+
+    tab name="test 1" split_direction="vertical" {
+        pane command="ssh" {
+            args "hugo@dalahest.se"
+        }
+        pane command="ssh" {
+            args "hugo@dalahest.se"
+        }
+    }
+
+    pane_template name="ssh" {
+        command "ssh"
+    }
+
+
+    
+    tab name="ES PRODUCTS" split_direction="vertical" {
+      ssh { args "upesc01s01" }
+      ssh { args "upesc01s02" }
+      ssh { args "upesc01s03" }
+    }
+
+    tab name="ES STATS" split_direction="vertical" {
+      ssh { args "upesc02s01" }
+      ssh { args "upesc02s02" }
+      ssh { args "upesc02s03" }
+    }
+
+    tab name="LB INTERN" split_direction="vertical" {
+      ssh { args "lb01" }
+      ssh { args "lb02" }
+    }
+
+    tab name="LB EXTERN" split_direction="vertical" {
+      ssh { args "192.168.0.200" }
+      ssh { args "192.168.0.201" }
+    }
+
+    tab name="VARNISH" split_direction="vertical" {
+      ssh { args "upvar01" }
+      ssh { args "upvar02" }
+    }
+
+    tab name="NS" split_direction="vertical" {
+      ssh { args "ns1" }
+      ssh { args "ns2" }
+    }
+
+    tab name="MONITOR" split_direction="vertical" {
+      ssh { args "mon01" }
+    }
+
+    tab name="upweb" split_direction="vertical" {
+      ssh { args "upweb01" }
+      ssh { args "upweb02" }
+      ssh { args "upweb03" }
+    }
+
+    tab name="boweb" split_direction="vertical" {
+      ssh { args "boweb01" }
+      ssh { args "boweb02" }
+      ssh { args "boweb03" }
+    }
+
+    tab name="stage" split_direction="vertical" {
+      ssh { args "sweb01" }
+    }
+
+    tab name="DB" split_direction="vertical" {
+      ssh { args "updb01"}
+      ssh { args "updb02"}
+    }
+}

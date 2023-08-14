@@ -21,6 +21,7 @@ stow vim
 stow zsh
 stow git 
 stow --adopt micro
+stow --adopt i3
 
 echo "* Adding micro plugins"
 micro -plugin install filemanager
